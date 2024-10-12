@@ -1,0 +1,42 @@
+
+GET http://localhost:3000/users
+
+
+
+###Get by Id
+GET http://localhost:3000/users/6709b861df0a51f2712fcc91
+
+
+
+###
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+    "email": "colton@byui.edu",
+    "username": "colton123",
+    "name": "Colton",
+    "ipaddress": "0.0.0.0/0"
+}
+
+
+
+###
+PUT http://localhost:3000/users/6709b861df0a51f2712fcc91 HTTP/1.1
+content-type: application/json
+
+{
+    "email": "colton@byui.edu",
+    "username": "colton123",
+    "name": "Colton",
+    "ipaddress": "0.0.0.0/0"
+}
+
+
+
+###
+DELETE http://localhost:3000/users/6709b861df0a51f2712fcc91 HTTP/1.1
+
+{
+    "message": "User deleted successfully"
+}
